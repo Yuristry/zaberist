@@ -45,6 +45,31 @@
 			<artifactId>zaber-common</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
+
+		<dependency>
+			<groupId>org.zaber</groupId>
+			<artifactId>zaber-dao</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.squareup.okhttp3</groupId>
+			<artifactId>okhttp</artifactId>
+			<version>4.12.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
+			<version>2.12.1</version>
+		</dependency>
+		<dependency>
+			<groupId>com.alibaba.csp</groupId>
+			<artifactId>sentinel-core</artifactId>
+		</dependency>
 	</dependencies>
 
 	<build>

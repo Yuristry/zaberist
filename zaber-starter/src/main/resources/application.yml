@@ -1,4 +1,28 @@
-spring.application.name: zaber-starter
+spring:
+  application:
+    name: zaber-starter
+  datasource:
+    url: jdbc:mysql://localhost:3306/susu?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+    username: root
+    password:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  redis:
+    host: 127.0.0.1
+    password:
+    port: 6379
+    database: 0
+    lettuce:
+      pool:
+        max-idle: 8
+        min-idle: 0
+        max-active: 8
+        max-wait: -1ms
+    timeout: 10000ms
+mybatis:
+  mapper-locations: classpath*:mapper/*.xml
+  type-aliases-package: com.example.domain
+  configuration:
+    map-underscore-to-camel-case: true
 # springdoc-openapi项目配置
 springdoc:
   swagger-ui:
