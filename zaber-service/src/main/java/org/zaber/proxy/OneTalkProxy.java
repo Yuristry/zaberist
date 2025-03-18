@@ -23,8 +23,7 @@ public class OneTalkProxy {
         if (response.isSuccessful() && response.body() != null) {
             String responseBody = response.body().string();
             Gson gson = new Gson();
-            HitokotoResponse hitokotoResponse = gson.fromJson(responseBody, HitokotoResponse.class);
-            return hitokotoResponse;
+            return gson.fromJson(responseBody, HitokotoResponse.class);
         }
         return null;
     }
